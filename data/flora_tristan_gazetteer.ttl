@@ -1,0 +1,452 @@
+@prefix category: <http://example.org/flora-tristan/feminist_category/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ex: <http://example.org/flora-tristan/place/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix placetype: <http://example.org/flora-tristan/place_type/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:FT_1 a crm:E53_Place ;
+    rdfs:label "Casa de la tía"@en ;
+    ex:genderSignificance "Feminized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_1 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_1/Appellation> ;
+    crm:P2_has_type category:GENDERED_SPACE,
+        category:POLITICAL_SPACE,
+        placetype:meeting_place,
+        placetype:residence ;
+    crm:P3_has_note "Described as a domestic space where political discussion among elite women occurred. Identified as a gendered space in feminist spatial analysis."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_1 .
+
+ex:FT_10 a crm:E53_Place ;
+    rdfs:label "Congreso"@en ;
+    ex:genderSignificance "Masculinized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_10 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_10 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_10/Appellation> ;
+    crm:P2_has_type category:POLITICAL_SPACE,
+        placetype:government_building ;
+    crm:P3_has_note "Seat of legislative debate, observed by Flora Tristán with symbolic gendered segregation and critique of performative masculinity in politics."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_10 .
+
+ex:FT_11 a crm:E53_Place ;
+    rdfs:label "Baños de mar"@en ;
+    ex:genderSignificance "Mixed"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_11 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_11 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_11/Appellation> ;
+    crm:P2_has_type category:PUBLIC_CIVIC_SPACE,
+        <http://example.org/flora-tristan/place_type/leisure/seashore_space> ;
+    crm:P3_has_note "Women’s access to ocean bathing represents embodied spatial freedom. Tristán presents it as a sign of physical strength and cultural independence."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_11 .
+
+ex:FT_12 a crm:E53_Place ;
+    rdfs:label "Teatro de Lima"@en ;
+    ex:genderSignificance "Mixed"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_12 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_12 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_12/Appellation> ;
+    crm:P2_has_type category:CULTURAL_SPACE,
+        category:PUBLIC_CIVIC_SPACE,
+        placetype:performance,
+        placetype:theater ;
+    crm:P3_has_note "A prominent theater in Lima where artistic performances and cultural events took place during the 19th century."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_12 .
+
+ex:FT_13 a crm:E53_Place ;
+    rdfs:label "Plaza de acho"@en ;
+    ex:genderSignificance "Mixed"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_13 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_13 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_13/Appellation> ;
+    crm:P2_has_type category:CULTURAL_SPACE,
+        category:GENDERED_SPACE,
+        category:PUBLIC_CIVIC_SPACE,
+        placetype:performance,
+        placetype:theater ;
+    crm:P3_has_note "One of the oldest bullfighting arenas in the Americas, located in Lima, and historically significant for public spectacles and gatherings."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_13 .
+
+ex:FT_2 a crm:E53_Place ;
+    rdfs:label "Catedral de Lima"@en ;
+    ex:genderSignificance "Masculinized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_2 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_2 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_2/Appellation> ;
+    crm:P2_has_type category:POLITICAL_SPACE,
+        category:RELIGIOUS_SPACE,
+        placetype:church ;
+    crm:P3_has_note "Religious and symbolic center of Lima, exclusively male clerical hierarchy"@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_2 .
+
+ex:FT_3 a crm:E53_Place ;
+    rdfs:label "Municipalidad"@en ;
+    ex:genderSignificance "Masculinized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_3 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_3 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_3/Appellation> ;
+    crm:P2_has_type category:POLITICAL_SPACE,
+        placetype:government_building ;
+    crm:P3_has_note "Symbol of institutional political authority (no women)"@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_3 .
+
+ex:FT_4 a crm:E53_Place ;
+    rdfs:label "Plaza Mayor"@en ;
+    ex:genderSignificance "Mixed"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_4 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_4 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_4/Appellation> ;
+    crm:P2_has_type category:POLITICAL_SPACE,
+        category:PUBLIC_CIVIC_SPACE,
+        category:SYMBOLIC_SPACE,
+        placetype:civic_square,
+        placetype:marketplace ;
+    crm:P3_has_note "Mixed-use civic space; includes economic activities, military processions, and street vendors"@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_4 .
+
+ex:FT_5 a crm:E53_Place ;
+    rdfs:label "Convento de San Francisco"@en ;
+    ex:genderSignificance "Feminized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_5 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_5 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_5/Appellation> ;
+    crm:P2_has_type category:GENDERED_SPACE,
+        category:RELIGIOUS_SPACE,
+        placetype:church,
+        placetype:monastery ;
+    crm:P3_has_note "Highly symbolic male religious space, where gendered exclusion and moral critique are explicit."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_5 .
+
+ex:FT_6 a crm:E53_Place ;
+    rdfs:label "Convento de la Encarnacion"@en ;
+    ex:genderSignificance "Feminized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_6 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_6 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_6/Appellation> ;
+    crm:P2_has_type category:GENDERED_SPACE,
+        category:RELIGIOUS_SPACE,
+        placetype:monastery ;
+    crm:P3_has_note "Female convent described as a site of informal independence and institutional decay. A symbolic gendered space."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_6 .
+
+ex:FT_7 a crm:E53_Place ;
+    rdfs:label "Callao (Puerto)"@en ;
+    ex:genderSignificance "Masculinized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_7 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_7 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_7/Appellation> ;
+    crm:P2_has_type category:ECONOMIC_SPACE,
+        category:POLITICAL_SPACE,
+        placetype:military_site,
+        placetype:port ;
+    crm:P3_has_note "Port of Lima and site of military fortresses. Described in passing, possibly symbolic of masculine power structures."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_7 .
+
+ex:FT_8 a crm:E53_Place ;
+    rdfs:label "Casa de la Moneda"@en ;
+    ex:genderSignificance "Masculinized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_8 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_8 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_8/Appellation> ;
+    crm:P2_has_type category:ECONOMIC_SPACE,
+        category:POLITICAL_SPACE,
+        placetype:mint ;
+    crm:P3_has_note "Modernized monetary facility described positively as efficient and technologically updated."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_8 .
+
+ex:FT_9 a crm:E53_Place ;
+    rdfs:label "Prisiones de la Inquisición"@en ;
+    ex:genderSignificance "Masculinized"@en ;
+    crm:P160_has_temporal_projection ex:TimeSpan_FT_9 ;
+    crm:P168_place_is_defined_by ex:Geo_FT_9 ;
+    crm:P1_is_identified_by <http://example.org/flora-tristan/place/FT_9/Appellation> ;
+    crm:P2_has_type category:CARCERAL_SPACE,
+        category:RELIGIOUS_SPACE,
+        placetype:prison,
+        placetype:religious_building ;
+    crm:P3_has_note "Former prison of the Holy Inquisition; emotionally described as oppressive and terrifying."@en ;
+    crm:P67_refers_to ex:EmotionsStatement_FT_9 .
+
+category:CARCERAL_SPACE a crm:E55_Type ;
+    rdfs:label "CARCERAL_SPACE"@en .
+
+category:SYMBOLIC_SPACE a crm:E55_Type ;
+    rdfs:label "SYMBOLIC_SPACE"@en .
+
+ex:EmotionsStatement_FT_1 a crm:E89_Propositional_Object ;
+    rdfs:label "Intimacy"@en ;
+    ex:hasText "Intimacy"@en .
+
+ex:EmotionsStatement_FT_10 a crm:E89_Propositional_Object ;
+    rdfs:label "Formality"@en ;
+    ex:hasText "Formality"@en .
+
+ex:EmotionsStatement_FT_11 a crm:E89_Propositional_Object ;
+    rdfs:label "Leisure"@en ;
+    ex:hasText "Leisure"@en .
+
+ex:EmotionsStatement_FT_12 a crm:E89_Propositional_Object ;
+    rdfs:label "Spectacle"@en ;
+    ex:hasText "Spectacle"@en .
+
+ex:EmotionsStatement_FT_13 a crm:E89_Propositional_Object ;
+    rdfs:label "Repugnance"@en ;
+    ex:hasText "Repugnance"@en .
+
+ex:EmotionsStatement_FT_2 a crm:E89_Propositional_Object ;
+    rdfs:label "Awe"@en ;
+    ex:hasText "Awe"@en .
+
+ex:EmotionsStatement_FT_3 a crm:E89_Propositional_Object ;
+    rdfs:label "Formality"@en ;
+    ex:hasText "Formality"@en .
+
+ex:EmotionsStatement_FT_4 a crm:E89_Propositional_Object ;
+    rdfs:label "Spectacle"@en ;
+    ex:hasText "Spectacle"@en .
+
+ex:EmotionsStatement_FT_5 a crm:E89_Propositional_Object ;
+    rdfs:label "Awe"@en ;
+    ex:hasText "Awe"@en .
+
+ex:EmotionsStatement_FT_6 a crm:E89_Propositional_Object ;
+    rdfs:label "Awe"@en ;
+    ex:hasText "Awe"@en .
+
+ex:EmotionsStatement_FT_7 a crm:E89_Propositional_Object ;
+    rdfs:label "Spectacle"@en ;
+    ex:hasText "Spectacle"@en .
+
+ex:EmotionsStatement_FT_8 a crm:E89_Propositional_Object ;
+    rdfs:label "Formality"@en ;
+    ex:hasText "Formality"@en .
+
+ex:EmotionsStatement_FT_9 a crm:E89_Propositional_Object ;
+    rdfs:label "Fear"@en ;
+    ex:hasText "Fear"@en .
+
+<http://example.org/flora-tristan/place/FT_1/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Casa de la tía"@en .
+
+<http://example.org/flora-tristan/place/FT_10/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Congreso"@en .
+
+<http://example.org/flora-tristan/place/FT_11/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Baños de mar"@en .
+
+<http://example.org/flora-tristan/place/FT_12/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Teatro de Lima"@en .
+
+<http://example.org/flora-tristan/place/FT_13/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Plaza de acho"@en .
+
+<http://example.org/flora-tristan/place/FT_2/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Catedral de Lima"@en .
+
+<http://example.org/flora-tristan/place/FT_3/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Municipalidad"@en .
+
+<http://example.org/flora-tristan/place/FT_4/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Plaza Mayor"@en .
+
+<http://example.org/flora-tristan/place/FT_5/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Convento de San Francisco"@en .
+
+<http://example.org/flora-tristan/place/FT_6/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Convento de la Encarnacion"@en .
+
+<http://example.org/flora-tristan/place/FT_7/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Callao (Puerto)"@en .
+
+<http://example.org/flora-tristan/place/FT_8/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Casa de la Moneda"@en .
+
+<http://example.org/flora-tristan/place/FT_9/Appellation> a crm:E41_Appellation ;
+    rdfs:label "Prisiones de la Inquisición"@en .
+
+ex:Geo_FT_10 a geo:Feature ;
+    rdfs:label "Point for Congreso"@en ;
+    geo:hasGeometry ex:Geometry_FT_10 .
+
+ex:Geo_FT_11 a geo:Feature ;
+    rdfs:label "Point for Baños de mar"@en ;
+    geo:hasGeometry ex:Geometry_FT_11 .
+
+ex:Geo_FT_12 a geo:Feature ;
+    rdfs:label "Point for Teatro de Lima"@en ;
+    geo:hasGeometry ex:Geometry_FT_12 .
+
+ex:Geo_FT_13 a geo:Feature ;
+    rdfs:label "Point for Plaza de acho"@en ;
+    geo:hasGeometry ex:Geometry_FT_13 .
+
+ex:Geo_FT_2 a geo:Feature ;
+    rdfs:label "Point for Catedral de Lima"@en ;
+    geo:hasGeometry ex:Geometry_FT_2 .
+
+ex:Geo_FT_3 a geo:Feature ;
+    rdfs:label "Point for Municipalidad"@en ;
+    geo:hasGeometry ex:Geometry_FT_3 .
+
+ex:Geo_FT_4 a geo:Feature ;
+    rdfs:label "Point for Plaza Mayor"@en ;
+    geo:hasGeometry ex:Geometry_FT_4 .
+
+ex:Geo_FT_5 a geo:Feature ;
+    rdfs:label "Point for Convento de San Francisco"@en ;
+    geo:hasGeometry ex:Geometry_FT_5 .
+
+ex:Geo_FT_6 a geo:Feature ;
+    rdfs:label "Point for Convento de la Encarnacion"@en ;
+    geo:hasGeometry ex:Geometry_FT_6 .
+
+ex:Geo_FT_7 a geo:Feature ;
+    rdfs:label "Point for Callao (Puerto)"@en ;
+    geo:hasGeometry ex:Geometry_FT_7 .
+
+ex:Geo_FT_8 a geo:Feature ;
+    rdfs:label "Point for Casa de la Moneda"@en ;
+    geo:hasGeometry ex:Geometry_FT_8 .
+
+ex:Geo_FT_9 a geo:Feature ;
+    rdfs:label "Point for Prisiones de la Inquisición"@en ;
+    geo:hasGeometry ex:Geometry_FT_9 .
+
+ex:Geometry_FT_10 a geo:Geometry ;
+    geo:asWKT "POINT(-77.02508680266948 -12.04768916455434)"^^geo:wktLiteral .
+
+ex:Geometry_FT_11 a geo:Geometry ;
+    geo:asWKT "POINT(-77.042793 -12.046374)"^^geo:wktLiteral .
+
+ex:Geometry_FT_12 a geo:Geometry ;
+    geo:asWKT "POINT(-77.03 -12.05)"^^geo:wktLiteral .
+
+ex:Geometry_FT_13 a geo:Geometry ;
+    geo:asWKT "POINT(-77.0232 -12.0414)"^^geo:wktLiteral .
+
+ex:Geometry_FT_2 a geo:Geometry ;
+    geo:asWKT "POINT(-77.030267 -12.046408)"^^geo:wktLiteral .
+
+ex:Geometry_FT_3 a geo:Geometry ;
+    geo:asWKT "POINT(-77.0308549 -12.0452255)"^^geo:wktLiteral .
+
+ex:Geometry_FT_4 a geo:Geometry ;
+    geo:asWKT "POINT(-77.030267 -12.046408)"^^geo:wktLiteral .
+
+ex:Geometry_FT_5 a geo:Geometry ;
+    geo:asWKT "POINT(-77.02707864784138 -12.045119943153125)"^^geo:wktLiteral .
+
+ex:Geometry_FT_6 a geo:Geometry ;
+    geo:asWKT "POINT(-77.030290 -12.043500)"^^geo:wktLiteral .
+
+ex:Geometry_FT_7 a geo:Geometry ;
+    geo:asWKT "POINT(-77.1333 -12.05)"^^geo:wktLiteral .
+
+ex:Geometry_FT_8 a geo:Geometry ;
+    geo:asWKT "POINT(-77.0240636613349 -12.048963568906997)"^^geo:wktLiteral .
+
+ex:Geometry_FT_9 a geo:Geometry ;
+    geo:asWKT "POINT(-77.0308 -12.0451)"^^geo:wktLiteral .
+
+ex:TimeSpan_FT_1 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_10 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_11 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_12 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_13 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_2 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_3 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_4 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_5 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_6 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_7 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_8 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+ex:TimeSpan_FT_9 a crm:E52_Time_Span ;
+    crm:P82a_begin_of_the_begin "1830-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+placetype:civic_square a crm:E55_Type ;
+    rdfs:label "civic_square"@en .
+
+<http://example.org/flora-tristan/place_type/leisure/seashore_space> a crm:E55_Type ;
+    rdfs:label "leisure/seashore space"@en .
+
+placetype:marketplace a crm:E55_Type ;
+    rdfs:label "marketplace"@en .
+
+placetype:meeting_place a crm:E55_Type ;
+    rdfs:label "meeting-place"@en .
+
+placetype:military_site a crm:E55_Type ;
+    rdfs:label "military_site"@en .
+
+placetype:mint a crm:E55_Type ;
+    rdfs:label "mint"@en .
+
+placetype:port a crm:E55_Type ;
+    rdfs:label "port"@en .
+
+placetype:prison a crm:E55_Type ;
+    rdfs:label "prison"@en .
+
+placetype:religious_building a crm:E55_Type ;
+    rdfs:label "religious_building"@en .
+
+placetype:residence a crm:E55_Type ;
+    rdfs:label "residence"@en .
+
+category:CULTURAL_SPACE a crm:E55_Type ;
+    rdfs:label "CULTURAL_SPACE"@en .
+
+category:ECONOMIC_SPACE a crm:E55_Type ;
+    rdfs:label "ECONOMIC_SPACE"@en .
+
+placetype:church a crm:E55_Type ;
+    rdfs:label "church"@en .
+
+placetype:government_building a crm:E55_Type ;
+    rdfs:label "government_building"@en .
+
+placetype:monastery a crm:E55_Type ;
+    rdfs:label "monastery"@en .
+
+placetype:performance a crm:E55_Type ;
+    rdfs:label "performance"@en .
+
+placetype:theater a crm:E55_Type ;
+    rdfs:label "theater"@en .
+
+category:GENDERED_SPACE a crm:E55_Type ;
+    rdfs:label "GENDERED_SPACE"@en .
+
+category:PUBLIC_CIVIC_SPACE a crm:E55_Type ;
+    rdfs:label "PUBLIC_CIVIC_SPACE"@en .
+
+category:RELIGIOUS_SPACE a crm:E55_Type ;
+    rdfs:label "RELIGIOUS_SPACE"@en .
+
+category:POLITICAL_SPACE a crm:E55_Type ;
+    rdfs:label "POLITICAL_SPACE"@en .
+
