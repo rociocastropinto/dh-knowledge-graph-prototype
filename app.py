@@ -36,7 +36,10 @@ st.markdown("""
   .stApp { background-color: #FAF9F6; }
   [data-testid="stAppViewContainer"] { background-color: #FAF9F6; }
   [data-testid="stHeader"] { background-color: #FAF9F6; }
-  section[data-testid="stSidebar"] > div { background-color: #F0EDE6; border-right: 1px solid #DDD8CE; }
+  section[data-testid="stSidebar"] > div { background-color: #F0EDE6 !important; border-right: 1px solid #DDD8CE; }
+section[data-testid="stSidebar"] * { color: #1a1a1a !important; }
+h1, h2, h3, h4, p, span, div, label { color: #1a1a1a !important; }
+[data-testid="stMarkdownContainer"] * { color: #1a1a1a !important; }
 
   /* Tabs */
   .stTabs [data-baseweb="tab-list"] {
@@ -106,16 +109,17 @@ st.markdown("""
 
   /* SPARQL code box */
   .sparql-box {
-    background: #F5F3EE;
+    background: #F5F3EE !important;
     border: 1px solid #DDD8CE;
     border-radius: 6px;
     padding: 14px;
     font-family: 'Courier New', monospace;
     font-size: 11px;
-    color: #3a2a4a;
+    color: #3a2a4a !important;
     white-space: pre-wrap;
     line-height: 1.6;
   }
+  .sparql-box * { color: #3a2a4a !important; background: transparent !important; }
 
   /* Selectbox and widgets */
   .stSelectbox > div > div {
