@@ -13,7 +13,7 @@ TTL_PATH = os.path.join(os.path.dirname(__file__), "data", "flora_tristan_gazett
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Feminist RDF Gazetteer · Lima",
+    page_title="Prototyping a Feminist RDF Gazetteer: Semantic Mapping of Gendered Space in 19th Century Lima, Peru through Flora Trist ´an’s Peregrinations of a Pariah · Lima",
     page_icon="🗺",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -161,11 +161,11 @@ with st.sidebar:
     st.markdown("**Lima, Peru — 19th century**")
     st.markdown("""
     <div class='sidebar-desc'>
-    A semantic knowledge graph encoding gendered, emotional, and socio-spatial 
-    dimensions of 19th-century Lima from Flora Tristán's 
+    A semantic knowledge graph encoding gendered, emotional, and socio-spatial
+    dimensions of 19th-century Lima from Flora Tristán's
     <em>Peregrinations of a Pariah</em>.<br><br>
-    Built with <strong>CIDOC CRM</strong>, <strong>RDFLib</strong>, 
-    <strong>GeoSPARQL</strong>, and deployed as a proof-of-concept 
+    Built with <strong>CIDOC CRM</strong>, <strong>RDFLib</strong>,
+    <strong>GeoSPARQL</strong>, and deployed as a proof-of-concept
     methodology for feminist literary gazetteers.<br><br>
     <strong>Ontologies used:</strong><br>
     · CIDOC CRM (E53, E55, E89, E52, E41)<br>
@@ -180,9 +180,9 @@ with st.sidebar:
 
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.markdown("# Feminist RDF Gazetteer")
-st.markdown("#### Semantic Mapping of Gendered Space in Nineteenth-Century Lima")
-st.markdown("*Flora Tristán · Peregrinations of a Pariah · CIDOC CRM · SPARQL · GeoSPARQL*")
+st.markdown("# Prototyping a Feminist RDF Gazetteer: Semantic Mapping of Gendered Space in 19th Century Lima, Peru through Flora Trist ´an’s Peregrinations of a Pariah · Lima")
+# st.markdown("#### Semantic Mapping of Gendered Space in Nineteenth-Century Lima")
+st.markdown("*Flora Tristán · Peru · History · Feminism · Peregrinations of a Pariah · CIDOC CRM · SPARQL · GeoSPARQL*")
 st.divider()
 
 # ── Metrics row ───────────────────────────────────────────────────────────────
@@ -226,8 +226,8 @@ tab1, tab2, tab3, tab4 = st.tabs([
 with tab1:
     st.markdown("### Query the Knowledge Graph")
     st.markdown("""
-    Select a pre-built SPARQL query below to interrogate the RDF dataset. 
-    Each query demonstrates a different analytical axis: gender, spatial category, 
+    Select a pre-built SPARQL query below to interrogate the RDF dataset.
+    Each query demonstrates a different analytical axis: gender, spatial category,
     emotional register, and intersectional combinations.
     """)
 
@@ -298,9 +298,9 @@ with tab1:
 with tab2:
     st.markdown("### Interactive Knowledge Graph")
     st.markdown("""
-    The graph encodes three layers of semantic structure: **places** (circles, coloured 
-    by gender significance), **spatial categories** (diamonds), and **emotional registers** 
-    (ellipses in gold). Edges represent CIDOC CRM properties. Hover over nodes to inspect 
+    The graph encodes three layers of semantic structure: **places** (circles, coloured
+    by gender significance), **spatial categories** (diamonds), and **emotional registers**
+    (ellipses in gold). Edges represent CIDOC CRM properties. Hover over nodes to inspect
     their annotations; drag to rearrange.
     """)
 
@@ -338,9 +338,9 @@ with tab2:
 with tab3:
     st.markdown("### Spatial Distribution of Gendered Places")
     st.markdown("""
-    Each marker represents a place from Tristán's narrative, geo-referenced to 
-    19th-century Lima. Marker colour encodes **gender significance** as annotated 
-    in the RDF dataset. Click any marker to view the full semantic record — 
+    Each marker represents a place from Tristán's narrative, geo-referenced to
+    19th-century Lima. Marker colour encodes **gender significance** as annotated
+    in the RDF dataset. Click any marker to view the full semantic record —
     spatial categories, emotional register, and interpretive note.
     """)
 
@@ -350,7 +350,7 @@ with tab3:
 
     st.markdown("""
     <div style='font-size:12px; color:#666; margin-top:8px'>
-    Coordinates sourced from GeoSPARQL <code>geo:asWKT</code> literals in the RDF dataset. 
+    Coordinates sourced from GeoSPARQL <code>geo:asWKT</code> literals in the RDF dataset.
     FT_1 (Casa de la tía) omitted from map — no geo-coordinates available in the source text.
     </div>
     """, unsafe_allow_html=True)
@@ -362,11 +362,11 @@ with tab3:
 with tab4:
     st.markdown("### Ontology & Data Model")
     st.markdown("""
-    This project models gendered historical places using **CIDOC CRM** as the canonical 
-    reference ontology, extended with custom feminist spatial properties and aligned with 
-    **GeoSPARQL** for geospatial representation. The design follows the principle that 
-    a well-designed conceptual model should be derivable into both an 
-    **RDF/OWL triple store** and a **normalised relational schema** — 
+    This project models gendered historical places using **CIDOC CRM** as the canonical
+    reference ontology, extended with custom feminist spatial properties and aligned with
+    **GeoSPARQL** for geospatial representation. The design follows the principle that
+    a well-designed conceptual model should be derivable into both an
+    **RDF/OWL triple store** and a **normalised relational schema** —
     a key requirement for projects requiring dual-database interoperability.
     """)
 
@@ -407,21 +407,21 @@ with tab4:
 
     st.markdown("#### Dual-Database Design Rationale")
     st.markdown("""
-    A central challenge in semantic DH projects is that a model designed exclusively 
-    for graph traversal often becomes hostile to relational query patterns — and vice versa. 
+    A central challenge in semantic DH projects is that a model designed exclusively
+    for graph traversal often becomes hostile to relational query patterns — and vice versa.
     This design resolves that tension through three decisions:
 
-    1. **Flat typing over deep hierarchies.** All categories are E55_Type instances rather 
-       than subclasses of E53, making them representable as rows in a `place_type` lookup 
+    1. **Flat typing over deep hierarchies.** All categories are E55_Type instances rather
+       than subclasses of E53, making them representable as rows in a `place_type` lookup
        table without loss of semantics.
 
-    2. **Datatype properties for scalar attributes.** `genderSignificance` and `hasText` 
-       are datatype properties (string literals), not object properties pointing to 
-       controlled-vocabulary URIs. This means they project directly to relational columns 
+    2. **Datatype properties for scalar attributes.** `genderSignificance` and `hasText`
+       are datatype properties (string literals), not object properties pointing to
+       controlled-vocabulary URIs. This means they project directly to relational columns
        without join overhead.
 
-    3. **Geometry decoupled from identity.** The `crm:P168 → geo:Feature → geo:Geometry` 
-       chain means coordinates can be stored in a PostGIS geometry column in a relational 
+    3. **Geometry decoupled from identity.** The `crm:P168 → geo:Feature → geo:Geometry`
+       chain means coordinates can be stored in a PostGIS geometry column in a relational
        system while the same entities remain dereferenceable as LOD URIs in the graph.
     """)
 
