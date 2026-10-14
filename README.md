@@ -4,7 +4,7 @@
 
 > Based on Flora Tristán's *Peregrinations of a Pariah* (1838) · CIDOC CRM · GeoSPARQL · SPARQL · Streamlit
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url-here.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dh-knowledge-graph-prototype.streamlit.app/)
 
 ---
 
