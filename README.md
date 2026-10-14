@@ -158,8 +158,3 @@ streamlit run app.py
 M.A. Digital Humanities · Georg-August-Universität Göttingen  
 [github.com/rociocastropinto](https://github.com/rociocastropinto)
 
----
-
-## License
-
-Data: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Code: MIT
